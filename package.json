@@ -1,0 +1,35 @@
+{
+  "name": "blog-node",
+  "version": "1.0.0",
+  "description": "基于node做的blog测试",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stop":"pm2 stop index.js --name 'blogNode'",
+    "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'blogNode'"
+  },
+  "author": "jacob",
+  "license": "ISC",
+  "dependencies": {
+    "config-lite": "^2.1.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^2.0.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.15.6",
+    "express-winston": "^2.4.0",
+    "marked": "^0.3.6",
+    "moment": "^2.19.2",
+    "mongolass": "^3.1.5",
+    "objectid-to-timestamp": "^1.3.0",
+    "sha1": "^1.1.1",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^4.0.1",
+    "mongolass": "^3.1.5",
+    "supertest": "^3.0.0"
+  }
+}
