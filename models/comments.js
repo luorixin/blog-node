@@ -26,7 +26,7 @@ module.exports = {
 
 	getComments : function(postId){
 		return Comment.find({postId:postId})
-					.populate({paht:'author',model:'User'})
+					.populate({path:'author',model:'User'})
 					.sort({_id:1})
 					.addCreatedAt()
 					.contentToHtml()
