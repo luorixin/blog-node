@@ -6,6 +6,7 @@ var UserModel = require('../models/users');
 var checkNotLogin = require('../middlewares/check').checkNotLogin;
 
 router.get('/',checkNotLogin,function(req,res,next){
+	console.log("sdfsf");
 	res.render('signin');
 })
 

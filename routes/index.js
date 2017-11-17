@@ -3,7 +3,7 @@ module.exports = function(app){
 		res.redirect('/posts');
 	})
 	app.use('/signup',require('./signup'))
-	app.use('/singin',require('./singin'))
+	app.use('/signin',require('./singin'))
 	app.use('/signout',require('./signout'))
 	app.use('/posts',require('./posts'))
 
