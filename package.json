@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "stop":"pm2 stop index.js --name 'blogNode'",
-    "start": "NODE_ENV=production pm2 start index.js --node-args='--harmony' --name 'blogNode'"
+    "start": "NODE_ENV=default pm2 start index.js --node-args='--harmony' --name 'blogNode'"
   },
   "author": "jacob",
   "license": "ISC",

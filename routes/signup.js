@@ -116,7 +116,6 @@ router.post("/edit",checkLogin,function(req,res,next){
 	  return res.redirect('/signup/edit');
 	}
 	user.password = sha1(password);
-	console.log(user._id)
 	UserModel.updateUserById(req.session.user._id,user)
 			.then(function(){
 				req.flash('success', '编辑信息成功');
