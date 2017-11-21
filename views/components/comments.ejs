@@ -1,13 +1,13 @@
 <div class="ui grid">
-  <div class="four wide column"></div>
-  <div class="eight wide column">
+  <div class="two wide column"></div>
+  <div class="twelve wide column">
     <div class="ui segment">
       <div class="ui minimal comments">
         <h3 class="ui dividing header">留言</h3>
         
         <% comments.forEach(function (comment) { %>
           <div class="comment">
-            <span class="avatar">
+            <span class="avatar" style="height:2.5em;">
               <img src="/img/<%= comment.author.avatar %>">
             </span>
             <div class="content">

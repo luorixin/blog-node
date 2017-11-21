@@ -8,5 +8,8 @@ module.exports = {
 		return User.findOne({name:name})
 					.addCreatedAt()
 					.exec();
+	},
+	updateUserById: function(userId,data){
+		return User.update({_id:userId},{$set:data}).exec();
 	}
 }
